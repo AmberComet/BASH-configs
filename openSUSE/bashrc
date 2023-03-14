@@ -19,5 +19,8 @@ GREENTEXT="\[$(tput setaf 70)\]"
 CYANTEXT="\[$(tput setaf 68)\]"
 RESET="\[$(tput sgr0)\]"
 
-#PS1="\e[1;34m[\@] \e[0m\e[1;32m\u in \W ->\e[0m"
+
+#PS1="\e[1;34m[\@] \e[0m\e[1;32m\u in \W ->\e[0m" old depricated prompt
 PS1="${CYANTEXT}[\@] ${GREENTEXT}\u in \W ->${RESET}"
+#TODO add a pastel prompt 
+#TODO add a full line prompt
