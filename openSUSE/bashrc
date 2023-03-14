@@ -15,9 +15,9 @@ alias makeex="chmod 700"
 
 #prompt
 #colors
-GREENTEXT="\[$(tput setaf 154)\]"
-LAVANDERTEXT="\[$(tput setaf 141)]"
+GREENTEXT="\[$(tput setaf 70)\]"
+CYANTEXT="\[$(tput setaf 68)\]"
 RESET="\[$(tput sgr0)\]"
 
 #PS1="\e[1;34m[\@] \e[0m\e[1;32m\u in \W ->\e[0m"
-PS1="${LAVANDERTEXT}[\@] ${RESET} ${GREENTEXT} \u in \W ->"
+PS1="${CYANTEXT}[\@] ${GREENTEXT}\u in \W ->${RESET}"
