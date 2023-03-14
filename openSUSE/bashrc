@@ -3,12 +3,21 @@
 #paths
 . "$HOME/.cargo/env"
 export PATH=$PATH:/usr/.local/go/bin
+export PATH=$PATH:/usr/local/go/bin
+export PATH=$PATH:/usr/local/flutter/bin
 
 #aliases
 alias ll="ls -la"
 alias py="python3"
 alias update="sudo zypper update"
 alias install="sudo zypper install"
+alias makeex="chmod 700"
 
 #prompt
-PS1="\e[1;34m[\@] \e[0m\e[1;32m\u in \W ->\e[0m"
+#colors
+GREENTEXT="\[$(tput setaf 154)\]"
+LAVANDERTEXT="\[$(tput setaf 141)]"
+RESET="\[$(tput sgr0)\]"
+
+#PS1="\e[1;34m[\@] \e[0m\e[1;32m\u in \W ->\e[0m"
+PS1="${LAVANDERTEXT}[\@] ${RESET} ${GREENTEXT} \u in \W ->"
