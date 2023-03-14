@@ -9,3 +9,6 @@ alias ll="ls -la"
 alias py="python3"
 alias update="sudo zypper update"
 alias install="sudo zypper install"
+
+#prompt
+PS1="\e[1;34m[\@] \e[0m\e[1;32m\u in \W ->\e[0m"
